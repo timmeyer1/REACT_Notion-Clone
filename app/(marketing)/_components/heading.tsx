@@ -5,6 +5,8 @@ import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/spinner";
+import Link from "next/link";
+import { SignInButton } from "@clerk/clerk-react";
 
 export const Heading = () => {
 
@@ -25,10 +27,20 @@ export const Heading = () => {
                 </div>
             )}
             {isAuthenticated && !isLoading && (
-                <Button className="cursor-pointer">
-                    Enter Notion
-                    <ArrowRight className="h-4 w-4" />
+                <Button asChild>
+                    <Link href={"/documents"}>
+                        Enter Notion
+                        <ArrowRight className="h-4 w-4 ml-2" />
+                    </Link>
                 </Button>
+            )}
+            { !isAuthenticated && !isLoading &&(
+                <SignInButton mode="modal">
+                    <Button>
+                        Get Notion free
+                        <ArrowRight className="h-4 w-4 ml-2"/>
+                    </Button>
+                </SignInButton>
             )}
         </div>
     )
