@@ -26,5 +26,3 @@ export const ConvexClientProvider = ({
         </ClerkProvider>
     )
 }
-
-// TODO: TIMECODE 1:30:00
