@@ -212,7 +212,7 @@ export const remove = mutation({
             throw new Error ("Not authorized");
         }
 
-        const documents = await ctx.db.delete(args.id);
+        const document = await ctx.db.delete(args.id);
 
         return document;
     }
