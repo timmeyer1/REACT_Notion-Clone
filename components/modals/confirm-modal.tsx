@@ -35,12 +35,12 @@ export const ConfirmModal = ({
             </AlertDialogTrigger>
             <AlertDialogContent>
                 <AlertDialogHeader>
-                    <AlertDialogTitle>Are you sure?</AlertDialogTitle>
-                    <AlertDialogDescription>This action cannot be undone.</AlertDialogDescription>
+                    <AlertDialogTitle>Êtes-vous sûr ?</AlertDialogTitle>
+                    <AlertDialogDescription>Cette action ne pourra pas être annulée.</AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
-                    <AlertDialogCancel onClick={e => e.stopPropagation()} >Cancel</AlertDialogCancel>
-                    <AlertDialogAction onClick={handleConfirm} >Confirm</AlertDialogAction>
+                    <AlertDialogCancel onClick={e => e.stopPropagation()} >Annuler</AlertDialogCancel>
+                    <AlertDialogAction onClick={handleConfirm} >Confirmer</AlertDialogAction>
                 </AlertDialogFooter>
             </AlertDialogContent>
         </AlertDialog>
