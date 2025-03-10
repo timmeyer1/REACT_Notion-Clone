@@ -148,7 +148,7 @@ export const Navigation = () => {
                 <div>
                     <UserItem />
                     <Item
-                        label="Rerchercher"
+                        label="Rechercher"
                         icon={Search}
                         isSearch
                         onClick={search.onOpen}
